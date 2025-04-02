@@ -58,9 +58,9 @@ const Weather = () => {
       {weatherData && (
         <div className='text-white'>
           <h2>{weatherData.name}, {weatherData.sys.country}</h2>
-          <p>Temperature: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{weatherData.main.temp}°C</p>
-          <p>Weather:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {weatherData.weather[0].description}</p>
-          <p>Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {weatherData.main.humidity}%</p>
+          <p>Temperature:&nbsp;&nbsp;&nbsp;{weatherData.main.temp}°C</p>
+          <p>Weather:&nbsp;&nbsp; {weatherData.weather[0].description}</p>
+          <p>Humidity:&nbsp;&nbsp; {weatherData.main.humidity}%</p>
         </div>
       )}
     </div>
